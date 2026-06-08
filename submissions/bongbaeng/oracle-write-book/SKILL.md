@@ -124,6 +124,32 @@ When the goal is "turn a token-heavy session into a lesson for others":
 5. Keep one **runnable artifact** per chapter so readers learn by doing, not
    just reading.
 
+## Pattern — technical / course book (the "how", not the "what")
+
+> Two volumes do different jobs. **Overview book** answers *what we built, why,
+> and what it means* — narrative, read once, builds conviction. **Technical /
+> course book** answers *how to build it yourself* — reference, read with a
+> keyboard, builds capability. Don't blur them; write a separate volume.
+
+When the goal is "a reader finishes the book and can build the thing":
+
+1. **Every concept = runnable artifact.** No claim without the exact command,
+   file, or code block that produces it. Pseudocode is failure here.
+2. **Anatomy before assembly.** Dissect the structure first (e.g. the exact
+   `SKILL.md` frontmatter fields + what each does) before showing a full example.
+3. **Build-it-yourself exercises.** Each chapter ends with a `🛠️ ลองเอง` block:
+   a concrete task + the expected output, so the reader verifies (เอหิปัสสิโก).
+4. **Show the real numbers.** Real line counts, real timings, real token costs —
+   a course that hand-waves the cost teaches a fantasy.
+5. **Copy-paste-ready.** Code blocks must run as-is (absolute paths, real repo
+   names), not `<your-repo-here>` unless the placeholder is unavoidable.
+6. **Layer difficulty.** Ch.1 = anatomy, mid = one full build walked line-by-line,
+   end = "now combine them" (composition). The spine is a skill curve, not a story.
+
+Front/back matter for a course book: add a **"ก่อนเริ่ม — สิ่งที่ต้องมี"**
+(prerequisites + tools to install) up front, and a **"เฉลย/คำตอบแบบฝึกหัด"** or
+cheatsheet at the back.
+
 ## Anti-patterns
 
 - ❌ Drafting prose before the outline is agreed → structural rework
@@ -141,3 +167,6 @@ Encodes the Workshop 02 book-writing run + kien-thai integration + PDF gotchas.
 **Patched 2026-06-08** (Workshop 03): added Step 0.5 (session→book mining via
 `/dig` + `/braid`) and the teaching-from-real-session pattern — so a token-heavy
 session can be turned into a book that teaches others.
+**Patched 2026-06-08** (Workshop 03, vol.2): added the technical/course-book
+pattern — overview vs how-to distinction, runnable-artifact rule, build-it-yourself
+exercises. A topic can now ship as two volumes: narrative (what/why) + course (how).
