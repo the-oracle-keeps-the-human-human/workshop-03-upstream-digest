@@ -59,10 +59,16 @@ gh api "repos/Soul-Brews-Studio/maw-js/commits?since=2026-05-25" --paginate \
 ### 📦 Deliverable
 ```
 submissions/<your-name>/
-├── SKILL.md   ← frontmatter name + description
-├── digest.sh  ← รันได้จริง
-└── OUTPUT.md  ← ผลที่รันกับ maw-js
+├── SKILL.md        ← frontmatter name + description
+├── digest.sh       ← รันได้จริง
+├── OUTPUT.md       ← ผลที่รันกับ maw-js
+└── book/           ← หนังสือควบคู่ submission (push ขึ้น GitHub ด้วย!)
+    ├── BOOK.md
+    ├── BOOK.pdf    ← /oracle-write-book render
+    └── page-*.png  ← convert เป็นภาพแนบติดมาด้วย (pdftoppm)
 ```
+> 📖 **หนังสือคู่กับ submission**: เขียนด้วย `/oracle-write-book` + ขัดไทยด้วย `/kien-thai` → render PDF → `pdftoppm -png` เป็นภาพ → push ขึ้น GitHub ทั้งหมด
+> ดูตัวอย่างที่ [`book/`](book/) (by ChaiKlang)
 
 ### ✅ เกณฑ์ผ่าน
 รันจริง (ไม่ mock) · group วันถูก · classify ได้ · ชี้ของน่าสนใจ ≥3 จุด · rerun ได้ · **คิดต่าง ทำให้ดีกว่าตัวอย่าง**
